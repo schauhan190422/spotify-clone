@@ -1,0 +1,137 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body {
+    background-color: antiquewhite;
+}
+
+h1 {
+    font-size: x-large;
+}
+
+/*universal selector (*) selects all HTML elements on the page*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul {
+    /*Displays an element as a block-level flex container
+    (set the content horizontally) */
+    display: flex;
+    /*remove bullet points*/
+    list-style-type: none;
+    height: 60px;
+    background-color: black;
+    color: white;
+    align-items: center;
+}
+
+nav ul li {
+    padding: 0 12px;
+}
+
+.brand img {
+    width: 44px;
+    padding: 0 8px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container {
+    min-height: 72vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    width: 70%;
+    margin: 23px auto;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('Icon/bg.jpg');
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+
+
+}
+
+.bottom {
+    /*It'll stick to the screen*/
+    position: sticky;
+    height: 80px;
+    background-color: black;
+    bottom: 0;
+    /* Displays an element as a block-level flex container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.icons {
+    margin-top: 14px;
+}
+
+.icons i {
+    /* makes the icon pointer so that we can point on it🤚*/
+    cursor: pointer;
+}
+
+.songItem {
+    height: 50px;
+    display: flex;
+    background-color: white;
+    color: black;
+    /* width: 85%; */
+    margin: 12px 0;
+    /*justify-content property defines how the browser distributes space between and around content */
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.timestamp {
+    margin: 0 23px;
+}
+
+.timestamp i {
+    cursor: pointer;
+}
+
+.songItem img {
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+
+.songItemContainer {
+    margin-top: 74px;
+}
+
+.songInfo {
+    position: absolute;
+    left: 15vw;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songInfo img {
+    opacity: 0;
+    /*transition opacity changes the state of the opaque element to transparent with a defined time duration*/
+    transition: opacity 0.4s ease-in;
+}
+
+#myProgressBar {
+    width: 150vh;
+    cursor: pointer;
+}
